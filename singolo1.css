@@ -10,13 +10,21 @@ body {
 .wrapper {
   margin: 0 auto;
   padding: 0 10px;
-  max-width: 1000px;
+  max-width: 940px;
 }
 
 .main-header {
-  padding-top: 30px;
+  padding-top: 29px;
+  padding-bottom: 30px;
+  border-bottom: 6px solid #323746;
   background: #2d303a;
   color: #fff;
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .main-header__logo {
@@ -30,4 +38,55 @@ body {
 
 .main-header__logo span {
   color: #f06c64;
+}
+
+.main-nav {
+  padding-top: 0px;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.main-nav__item {
+  padding-left: 30px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.main-nav__item::before {
+  content: "·";
+  position: absolute;
+  top: 1px;
+  left: 14px;
+  font: bold 12px "Lato", sans-serif;
+  color: #494e62;
+}
+
+.main-nav__item:first-child::before {
+  display: none;
+}
+
+.main-nav__item--active {
+  cursor: default;
+  color: #f06c64;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-nav__link:hover {
+  color: #f06c64;
+}
+
+.main-nav__link:active {
+  opacity: 0.8;
 }
