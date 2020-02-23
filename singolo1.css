@@ -4,7 +4,7 @@ body {
   padding: 0;
   margin: 0;
 
-  font: normal 12px "Lato", sans-serif;
+  font: 400 12px "Lato", sans-serif;
 }
 
 img {
@@ -47,7 +47,7 @@ button {
   margin: 0;
   cursor: default;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.03em;
 }
@@ -69,7 +69,7 @@ button {
 
 .main-nav__item {
   padding-left: 30px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 18px;
   letter-spacing: -0.015em;
   text-transform: uppercase;
@@ -81,7 +81,7 @@ button {
   position: absolute;
   top: 1px;
   left: 14px;
-  font: bold 12px "Lato", sans-serif;
+  font: 700 12px "Lato", sans-serif;
   color: #494e62;
 }
 
@@ -203,4 +203,95 @@ button {
 
 .slider__btn-next {
   background: url("assets/images/btn-next.png") 0 0 no-repeat;
+}
+
+.services {
+  padding-top: 59px;
+  padding-bottom: 53px;
+  background: #f2f2f2;
+  color: #666d89;
+  border-bottom: 6px solid #fff;
+}
+
+.services__title {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.services__description {
+  margin-bottom: 43px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: -0.003em;
+}
+
+.services__list {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-column-gap: 20px;
+  grid-row-gap: 21px;
+  list-style: none;
+}
+
+.services__item {
+  padding-left: 80px;
+  height: 102px;
+  position: relative;
+  overflow: hidden;
+}
+
+.services__item::before {
+  content: "";
+  display: block;
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.services__custom-design::before {
+  background-image: url("assets/images/custom-design-icon.png");
+}
+
+.services__inovative-ideas::before {
+  background-image: url("assets/images/inovative-ideas-icon.png");
+}
+
+.services__love-answer::before {
+  background-image: url("assets/images/love-answer-icon.png");
+}
+
+.services__responsive::before {
+  background-image: url("assets/images/responsive-icon.png");
+}
+
+.services__support::before {
+  background-image: url("assets/images/support-icon.png");
+}
+
+.services__like-star::before {
+  background-image: url("assets/images/like-star-icon.png");
+}
+
+.services__subtitle {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.services__text {
+  padding: 0;
+  margin: 0;
+  line-height: 22px;
+  letter-spacing: 0.02em;
 }
