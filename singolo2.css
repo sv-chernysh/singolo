@@ -3,6 +3,7 @@
 body {
   padding: 0;
   margin: 0;
+  min-width: 960px;
   font: 400 12px "Lato", sans-serif;
   color: #767e9e;
 }
