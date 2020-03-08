@@ -16,8 +16,20 @@
           porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
           condimentum ni
         </p>
-        <form action="#7" method="post" class="get-quote__form"></form>
-        <section class="get-quote__contacts"></section>
+        <div class="get-quote__wrapper">
+          <form action="#7" method="post" class="get-quote__form project-form">
+            <input class="project-form__field project-form__name" type="text" name="user-name" id="user-name"
+                   placeholder="Name (Required)" required>
+            <input class="project-form__field project-form__email" type="email" name="user-email" id="user-email"
+                   placeholder="Email (Required)" required>
+            <input class="project-form__field project-form__subject" type="text" name="subject" id="subject"
+                   placeholder="Subject">
+            <textarea class="project-form__field project-form__description" name="project-description"
+                      id="project-description" placeholder="Describe your project in detail..."></textarea>
+            <button class="project-form__btn">Submit</button>
+          </form>
+          <section class="get-quote__contacts"></section>
+        </div>
       </div>
     </section>
   </main>
