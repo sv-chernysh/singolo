@@ -3,9 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Singolo</title>
 </head>
 <body>
-  
+  <header class="main-header">
+    <div class="main-header__wrapper  wrapper">
+      <h1 class="main-header__logo">Singolo<span>*</span></h1>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <span>Home</span>
+          </li>
+          <li class="main-nav__item">
+            <a href="#2" class="main-nav__link">Services</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#3" class="main-nav__link">Portfolio</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#4" class="main-nav__link">About</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#5" class="main-nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="slider">
+      <div class="slider__wrapper  wrapper">
+        <div class="slider__content">
+          <div class="slider__image">
+            <img src="assets/images/iphone.png" width="215" height="458" alt="iphone">
+            <div class="slider__screen"></div>
+          </div>
+          <div class="slider__image  slider__image--horizontal">
+            <img src="assets/images/iphone.png" width="215" height="458" alt="iphone">
+            <div class="slider__screen  slider__screen--horizontal"></div>
+          </div>
+        </div>
+        <div class="slider__controls">
+          <button class="slider__btn slider__btn-prev" type="button"></button>
+          <button class="slider__btn slider__btn-next" type="button"></button>
+        </div>
+      </div>
+    </div>
+
+    <section class="services">
+      <div class="wrapper">
+        <h2 class="services__title">Our Services</h2>
+        <p class="services__description">
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
+          nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+          tortor mauris condimentum nibh.
+        </p>
+        <ul class="services__list">
+          <li class="services__item services__custom-design">
+            <h3 class="services__subtitle">Custom Design</h3>
+            <p class="services__text">
+              Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
+            </p>
+          </li>
+          <li class="services__item services__inovative-ideas">
+            <h3 class="services__subtitle">Inovative Ideas</h3>
+            <p class="services__text">
+              Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+            </p>
+          </li>
+          <li class="services__item services__love-answer">
+            <h3 class="services__subtitle">Love Is The Answer</h3>
+            <p class="services__text">
+              Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
+            </p>
+          </li>
+          <li class="services__item services__responsive">
+            <h3 class="services__subtitle">Responsive Layout</h3>
+            <p class="services__text">
+              Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.
+            </p>
+          </li>
+          <li class="services__item services__support">
+            <h3 class="services__subtitle">24 / 7 Support</h3>
+            <p class="services__text">
+              Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas
+              venenatis lorem .
+            </p>
+          </li>
+          <li class="services__item services__like-star">
+            <h3 class="services__subtitle">Feel Like A Star</h3>
+            <p class="services__text">
+              Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
