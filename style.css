@@ -535,6 +535,12 @@ button {
   color: #f48c8f;
 }
 
+.project-form__field::-ms-input-placeholder {
+  font-size: 12px;
+  font-family: "Lato", "Arial", sans-serif;
+  color: #f48c8f;
+}
+
 textarea.project-form__field {
   resize: none;
   min-height: 202px;
