@@ -55,6 +55,17 @@ button {
   letter-spacing: -0.002em;
 }
 
+.get-quote__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-form {
+  padding-right: 1px;
+  margin-right: 20px;
+  width: 619px;
+}
+
 .project-form__field {
   padding: 9px 15px;
   margin-bottom: 16px;
@@ -78,7 +89,7 @@ button {
 
 textarea.project-form__field {
   resize: none;
-  min-height: 184px;
+  min-height: 202px;
 }
 
 .project-form__btn {
@@ -96,4 +107,76 @@ textarea.project-form__field {
 
 .project-form__btn:hover {
   background: #b52f28;
+}
+
+.project-form__btn:active {
+  opacity: 0.7;
+}
+
+.contacts {
+  width: 300px;
+}
+
+.contacts__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 18px;
+  letter-spacing: 0.006em;
+}
+
+.contacts__description {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacts__item {
+  padding-left: 23px;
+  display: block;
+  position: relative;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: #f0d8d9;
+}
+
+.contacts__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.contacts__address::before {
+  background: url("assets/images/location-icon.png") 0 0 no-repeat;
+  width: 7px;
+  height: 11px;
+  left: 3px;
+}
+
+.contacts__phone::before {
+  background: url("assets/images/phone-icon.png") 0 0 no-repeat;
+  width: 11px;
+  height: 11px;
+  left: 1px;
+}
+
+.contacts__email::before {
+  background: url("assets/images/mail-icon.png");
+  width: 13px;
+  height: 8px;
+  top: 9px;
 }
