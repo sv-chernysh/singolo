@@ -229,7 +229,7 @@
             <input class="project-form__field project-form__email" type="email" name="user-email" id="user-email"
                    placeholder="Email (Required)" required>
             <input class="project-form__field project-form__subject" type="text" name="subject" id="subject"
-                   placeholder="Subject">
+                   placeholder="Subject" maxlength="70">
             <textarea class="project-form__field project-form__description" name="project-description"
                       id="project-description" placeholder="Describe your project in detail..."></textarea>
             <button class="project-form__btn">Submit</button>
@@ -262,6 +262,20 @@
       </div>
     </footer>
   </main>
+
+  <div class="modal">
+    <p class="modal__status">The letter was sent</p>
+    <p class="modal__content">
+      <span class="modal__subtitle">Subject:</span>
+      <span class="modal__subject modal__text"></span>
+    </p>
+    <p class="modal__content">
+      <span class="modal__subtitle">Description:</span>
+      <span class="modal__description modal__text"></span>
+    </p>
+    <button class="modal__btn" type="button">ok</button>
+  </div>
+  <div class="overlay"></div>
   <script src="script.js"></script>
 </body>
 </html>
