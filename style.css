@@ -210,40 +210,20 @@ a.anchor {
 
 .slider__content {
   padding-top: 53px;
-  padding-left: 72px;
   display: flex;
 }
 
-.slider__image {
-  padding-bottom: 25px;
-  padding-right: 25px;
+.slider__phone {
+  margin-left: 72px;
   position: relative;
 }
 
-.slider__image::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  background: url("assets/images/iphones-shadow.png") 100% 0 no-repeat;
+.slider__phone--horizontal {
+  margin-top: 121px;
+  margin-left: 73px;
 }
 
-.slider__image--horizontal {
-  padding: 0;
-  transform-origin: bottom right;
-  transform: rotate(90deg) translate(-122px, 167px);
-  padding-top: 25px;
-  padding-right: 25px;
-}
-
-.slider__image--horizontal::before {
-  transform: scaleY(-1);
-  top: -1px;
-}
-
-.slider__image img {
+.slider__image {
   position: relative;
   z-index: 2;
 }
@@ -254,18 +234,15 @@ a.anchor {
   left: 14px;
   width: 188px;
   height: 333px;
-  background: url("assets/images/screen-1.jpg") -14px -135px no-repeat;
+  overflow: hidden;
   z-index: 3;
 }
 
 .slider__screen--horizontal {
-  transform-origin: bottom right;
-  transform: rotate(-90deg);
   width: 333px;
   height: 188px;
-  top: -98px;
-  left: -131px;
-  background: url(assets/images/screen-2.jpg) -125px -119px;
+  top: 14px;
+  left: 60px;
 }
 
 .slider__controls {
@@ -754,4 +731,10 @@ textarea.project-form__field {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 1019px) {
+  .wrapper {
+    padding: 0 40px;
+  }
 }
